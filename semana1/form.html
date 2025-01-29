@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+
+    <!--Formularios-->
+    <!--action (URL) direcccion hacia donde vamos a enviar los datos del formulario-->
+    <!--method (Get/post/put/delete) tipo http que usaremos para enviar la informacion-->
+    <!--get (obtener informacion) post(crear informacion) put(actualizarla) delete(eliminarla)-->
+
+    <form action="" method="get">
+        <p><input type="text" placeholder="Ingrese su Nombre" name="nombre" id="mi_nombre" required></p>
+        <p><input type="email" placeholder="Ingrese su Email" name="email" id="mi_email"></p>
+        <!--Campo en readonly si se envia al servidor-->
+        <p><input type="text" value="127.0.1.1" readonly></p>
+        <!-- Campos en disable no se envia al servidor -->
+        <p><input type="text" value="5" disabled></p>
+        <!--limitar numero minimo de caracteres-->
+        <p><input type="number" placeholder="Ingrese su DNI" name="dni" id="mi_dni" minlength="8" required></p>
+        <!--Pasos step-->
+        <p><input type="number" step="5" min="0" value="0"></p>
+        <p><input type="password" placeholder="Ingrese su Password" name="password" id="mi_password"></p>
+        <input type="submit" value="Ingresar">
+    </form>
+</body>
+</html>
